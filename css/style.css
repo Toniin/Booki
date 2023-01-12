@@ -27,19 +27,22 @@ header {
   list-style: none;
   align-items: center;
 
-  margin: 0 5px;
   padding: 0 10px;
 }
 
 .nav-header a {
   text-decoration: none;
+  font-weight: 500;
+  color: #000000;
 }
 
 .nav-header li:hover {
-  border-top: solid 5px blue;
+  border-top: solid 5px #0065FC;
 }
 
 .nav-header li:hover a {
   position: relative;
   bottom: 2.5px;
+
+  color: #0065FC;
 }
