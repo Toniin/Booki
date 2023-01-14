@@ -60,10 +60,41 @@ header {
 }
 
   /* MAIN */
+
 h1 {
   font-weight: 700;
 }
 
 h2 {
   font-weight: 400;
+}
+
+  /* FOOTER */
+footer {
+  display: flex;
+  flex-direction: row;
+
+  background-color: #d9d9d9;
+}
+
+.section-footer {
+  padding: 30px 60px;
+}
+
+.section-footer h3 {
+  font-weight: 700;
+}
+
+.section-footer ul {
+  padding: 0;
+}
+
+.section-footer li {
+  list-style: none;
+  padding: 5px;
+}
+
+.section-footer a {
+  text-decoration: none;
+  color: #000000;
 }
