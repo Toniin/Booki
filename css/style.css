@@ -88,7 +88,7 @@ h2 {
   align-items: center;
   background-color: #d9d9d9;
   border-radius: 15px 0 0 15px;
-  
+
   padding: 0 15px;
 }
 
@@ -112,7 +112,7 @@ h2 {
   outline: none;
 }
 
-.search-bar input:placeholder-shown + .button-searchbar span{
+.search-bar input:placeholder-shown + .button-searchbar span {
   display: none;
 }
 
@@ -141,12 +141,47 @@ h2 {
 
 /* FILTER */
 
-.filter {
+.filters {
   display: flex;
   flex-direction: row;
   align-items: center;
   height: 50px;
-  background-color: red;
+
+  margin: 20px 0;
+  padding: 0;
+  border: none;
+
+  font-weight: 700;
+}
+
+.filters legend {
+  float: right;
+  font-size: 1.2em;
+  margin-right: 20px;
+}
+
+.filters input {
+  display: none;
+}
+
+.filter {
+  margin: 15px;
+  padding: 7px 20px;
+  border: solid 2px #d9d9d9;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.icon-filter {
+  color: #0065fc;
+  padding-right: 10px;
+}
+
+#economical:checked + label,
+#family:checked + label,
+#romantic:checked + label,
+#pets-allowed:checked + label {
+  background: #deebff;
 }
 
 .info {
@@ -334,7 +369,7 @@ h2 {
 .card-toprate p {
   font-size: 0.7em;
   font-weight: 600;
-  margin: 10px 5px; 
+  margin: 10px 5px;
 }
 
 .stars-toprate {

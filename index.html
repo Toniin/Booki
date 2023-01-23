@@ -58,24 +58,38 @@
       </form>
 
       <!-- Filter -->
-      <form class="filter">
-          <label>Filtres</label>
-          <div>
-            <i class="fa-solid fa-money-bill-wave"></i>
-            <input type="button" value="Économique" />
-          </div>
-          <div>
-            <i class="fa-solid fa-person"></i>
-            <input type="button" value="Familial" />
-          </div>
-          <div>
-            <i class="fa-solid fa-heart"></i>
-            <input type="button" value="Romantique" />
-          </div>
-          <div>
-            <i class="fa-solid fa-dog"></i>
-            <input type="button" value="Animaux autorisés" />
-          </div>
+      <form>
+        <fieldset class="filters">
+          <legend>Filtres</legend>
+
+          <!-- ECONOMICAL -->
+          <input type="checkbox" id="economical" />
+          <label class="filter" for="economical">
+            <i class="fa-solid fa-money-bill-wave icon-filter"></i>
+            <span>Économique</span>
+          </label>
+
+          <!-- FAMILY -->
+          <input type="checkbox" id="family" />
+          <label class="filter" for="family">
+            <i class="fa-solid fa-person icon-filter"></i>
+            <span>Familial</span>
+          </label>
+
+          <!-- ROMANTIC -->
+          <input type="checkbox" id="romantic" />
+          <label class="filter" for="romantic">
+            <i class="fa-solid fa-heart icon-filter"></i>
+            <span>Romantique</span>
+          </label>
+
+          <!-- PETS ALLOWED -->
+          <input type="checkbox" id="pets-allowed" />
+          <label class="filter" for="pets-allowed">
+            <i class="fa-solid fa-dog icon-filter"></i>
+            <span>Animaux autorisés</span>
+          </label>
+        </fieldset>
       </form>
 
       <div class="info">
