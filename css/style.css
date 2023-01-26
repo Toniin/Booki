@@ -116,10 +116,6 @@ h2 {
   outline: none;
 }
 
-/* .search-bar input:placeholder-shown + .button-searchbar span {
-  display: none;
-} */
-
 .button-searchbar {
   display: flex;
   align-items: center;
@@ -220,7 +216,7 @@ h2 {
   background-color: #d9d9d9;
   border-radius: 20px;
   margin: 30px 0;
-  padding-top: 40px;
+  padding-top: 30px;
 }
 
 .title-hebergement {
@@ -236,7 +232,7 @@ h2 {
   flex-wrap: wrap;
   gap: 1.5em;
 
-  margin: 30px 0 50px 0;
+  margin: 30px 0 45px 0;
 }
 
 .button {
@@ -284,7 +280,7 @@ h2 {
 .card-herbegement p {
   font-size: 0.7em;
   font-weight: 600;
-  margin: 3px 0px;
+  margin-top: 3px;
 }
 
 .stars-hebergement {
@@ -313,7 +309,7 @@ h2 {
   height: 100%;
 
   margin: 30px 0;
-  padding: 40px 0;
+  padding: 30px 0;
 }
 
 .title-toprate {
@@ -368,6 +364,7 @@ h2 {
 }
 
 .card-toprate img {
+  object-fit: cover;
   width: 40%;
   height: 140px;
   border-radius: 20px 0 0 20px;
@@ -409,7 +406,7 @@ h2 {
 .cards-activities {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  gap: 3em;
   margin: 20px 0;
 }
 
@@ -471,11 +468,7 @@ footer {
 }
 
 /* 768px <= TABLET < 992px */
-@media (min-width: 768px) and (max-width: 992px) {
-  .star-active, .star-inactive {
-    width: 10%;
-  }
-
+@media (min-width: 768px) and (max-width: 991px) {
   /* MAIN (tablet) */
   h1 {
     font-size: 1.4em;
@@ -531,6 +524,10 @@ footer {
     height: 90px;
   }
 
+  .card-herbegement p {
+    font-size: 0.6em;
+  }
+
   .button {
     margin-left: 20px;
   }
@@ -561,10 +558,6 @@ footer {
 
   .card-toprate img {
     height: 110px;
-  }
-
-  .card-toprate h3 {
-    font-size: 0.7em;
   }
 
   .card-toprate p {
@@ -601,8 +594,12 @@ footer {
 }
 
 /* MOBILE < 768px */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   header {
     background-color: blue;
+  }
+
+  .button-searchbar span {
+  display: none;
   }
 }
