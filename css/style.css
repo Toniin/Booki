@@ -189,6 +189,7 @@ h2 {
   display: flex;
   align-items: center;
   font-size: 1em;
+  margin: 20px 0 10px 0;
 }
 
 .icon-info {
@@ -198,6 +199,10 @@ h2 {
   border: solid 1px #d9d9d9;
   border-radius: 50%;
   margin-right: 15px;
+}
+
+.info p {
+  margin: 0;
 }
 
 .main-content {
@@ -216,6 +221,7 @@ h2 {
   background-color: #d9d9d9;
   border-radius: 20px;
   padding: 30px 3%;
+  margin: 30px 0;
 }
 
 .title-hebergement {
@@ -306,7 +312,7 @@ h2 {
   background-color: #d9d9d9;
   border-radius: 20px;
   height: 100%;
-
+  margin: 30px 0;
   padding: 30px 3%;
 }
 
@@ -500,7 +506,6 @@ footer {
   /* HERBEGEMENT (tablet) */
   #section-hebergement {
     flex-basis: 100%;
-    margin: 30px 0;
     padding: 30px 5%;
   }
 
@@ -519,7 +524,6 @@ footer {
   /* TOPRATE (tablet) */
   #section-toprate {
     flex-basis: 100%;
-    margin: 30px 0;
     padding: 30px 5%;
   }
 
