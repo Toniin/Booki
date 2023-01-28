@@ -212,10 +212,10 @@ h2 {
 #section-hebergement {
   display: flex;
   flex-direction: column;
-  flex-basis: 59%;
+  flex-basis: 60%;
   background-color: #d9d9d9;
   border-radius: 20px;
-  padding: 30px 40px;
+  padding: 30px 3%;
 }
 
 .title-hebergement {
@@ -302,12 +302,12 @@ h2 {
 #section-toprate {
   display: flex;
   flex-direction: column;
-  flex-basis: 23%;
+  flex-basis: 25%;
   background-color: #d9d9d9;
   border-radius: 20px;
   height: 100%;
 
-  padding: 30px 40px;
+  padding: 30px 3%;
 }
 
 .title-toprate {
