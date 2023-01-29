@@ -56,14 +56,13 @@ header {
 }
 
 .nav-header li:hover {
-  border-top: solid 2px #0065fc;
+  border-top: solid 3px #0065fc;
 }
 
 .nav-header li:hover a {
   position: relative;
-  bottom: 1px;
+  bottom: 1.5px;
 
-  font-weight: 500;
   color: #0065fc;
 }
 
@@ -247,7 +246,7 @@ h2 {
   color: #000000;
 }
 
-.card-herbegement {
+.card-hebergement {
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
@@ -258,13 +257,13 @@ h2 {
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
 }
 
-.card-herbegement a {
+.card-hebergement a {
   text-decoration: none;
   color: #000000;
   margin: 0;
 }
 
-.card-herbegement img {
+.card-hebergement img {
   width: 96%;
   height: 120px;
   padding: 2%;
@@ -273,24 +272,23 @@ h2 {
 }
 
 .card-container {
-  padding: 0 10px;
+  margin: 3px 15px;
 }
 
-.card-herbegement h3 {
+.card-hebergement h3 {
   font-size: 0.8em;
   font-weight: 700;
   margin: 0;
 }
 
-.card-herbegement p {
+.card-hebergement p {
   font-size: 0.7em;
   font-weight: 600;
-  margin-top: 3px;
+  margin: 5px 0;
 }
 
 .stars-hebergement {
   width: 80px;
-  margin-top: 5px;
 }
 
 .star-active {
@@ -427,7 +425,7 @@ h2 {
 
 .card-activities img {
   width: 100%;
-  height: 85%;
+  height: 370px;
   border-radius: 15px 15px 0 0;
   object-fit: cover;
 }
@@ -503,21 +501,21 @@ footer {
     padding-right: 5px;
   }
 
-  /* HERBEGEMENT (tablet) */
+  /* HEBERGEMENT (tablet) */
   #section-hebergement {
     flex-basis: 100%;
     padding: 30px 5%;
   }
 
-  .card-herbegement {
+  .card-hebergement {
     height: 170px;
   }
 
-  .card-herbegement img {
+  .card-hebergement img {
     height: 90px;
   }
 
-  .card-herbegement p {
+  .card-hebergement p {
     font-size: 0.6em;
   }
 
@@ -559,11 +557,11 @@ footer {
     flex-basis: 23%;
     height: 270px;
   }
-  
+
   .card-activities img {
     height: 75%;
   }
-  
+
   .card-activities h3 {
     align-items: center;
     font-size: 0.9em;
@@ -579,11 +577,160 @@ footer {
 
 /* MOBILE < 768px */
 @media (max-width: 767px) {
+  body {
+    padding: 0;
+  }
+
+  /* HEADER (mobile) */
   header {
-    background-color: blue;
+    padding: 0;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .logo {
+    margin: 20px 0;
+  }
+
+  .nav-header,
+  .nav-header ul {
+    width: 100%;
+  }
+
+  .nav-header li {
+    justify-content: center;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .nav-header a {
+    font-size: 1.1em;
+  }
+
+  .nav-header li:hover {
+    border-top: none;
+    border-bottom: solid 4px #0065fc;
+  }
+
+  h1 {
+    margin: 30px 30px 15px 30px;
+  }
+
+  h2 {
+    margin: 0 30px;
+  }
+
+  /* SEARCHBAR (mobile) */
+  .search-bar {
+    margin: 30px;
+  }
+
+  .search-bar input {
+    width: 215px;
   }
 
   .button-searchbar span {
-  display: none;
+    display: none;
+  }
+
+  /* FILTER (mobile) */
+  .filters {
+    flex-wrap: wrap;
+    height: auto;
+    margin: 30px;
+  }
+
+  .filters legend {
+    float: none;
+    margin-bottom: 10px;
+  }
+
+  .filter {
+    flex-basis: 38%;
+    font-size: 0.7em;
+    padding: 10px;
+    margin: 5px;
+  }
+
+  .icon-filter {
+    padding-right: 5px;
+  }  
+
+  /* INFO (mobile) */
+  .info {
+    margin: 30px;
+  }
+
+  /* TOPRATE (mobile) */
+  #section-toprate {
+    flex-basis: 100%;
+    order: 1;
+    border-radius: 0;
+    margin: 0;
+    padding: 30px;
+  }
+
+  .cards-toprate {
+    gap: 2em;
+  }
+
+  /* HEBERGEMENT (mobile) */
+  #section-hebergement {
+    flex-basis: 100%;
+    order: 2;
+    margin: 0;
+    padding: 30px;
+    background-color: #ffffff;
+  }
+
+  .cards-hebergement {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .card-hebergement img {
+    width: 98%;
+    padding: 1%;
+    height: 140px;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .button {
+    display: none;
+  }
+
+  /* ACTIVITIES (mobile) */
+  #section-activities {
+    flex-basis: 100%;
+    order: 3;
+    padding: 30px;
+  }
+
+  .cards-activities {
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .card-activities img {
+    height: 140px;
+  }
+
+  /* FOOTER (mobile) */
+  footer {
+    flex-direction: column;
+    padding: 40px 30px;
+  }
+
+  .section-footer {
+    flex-basis: 35%;
+    padding-left: 0;
+  }
+
+  .section-footer h2 {
+    margin: 0;
+  }
+
+  .section-footer ul {
+    margin: 10px 0 30px 0;
   }
 }
